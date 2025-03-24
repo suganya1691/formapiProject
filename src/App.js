@@ -72,9 +72,9 @@ function App() {
         <h2>Form Project</h2>
         <form onSubmit={handleSubmit}>
           <label>Title</label>
-          <input className="form-field" type='text' placeholder='Enter First Name' onChange = {(e) =>setBody(e.target.value)} value={body}/><br/>
-          <label>Body</label>
-          <input  className="form-field" type='text' placeholder='Enter Last Name' onChange={(e) =>setTitle(e.target.value)}  value={title}/><br/>
+          <input className="form-field" type='text' placeholder='Enter Title' onChange = {(e) =>setBody(e.target.value)} value={body}/><br/>
+          <label>Message</label>
+          <input  className="form-field" type='text' placeholder='Enter Message' onChange={(e) =>setTitle(e.target.value)}  value={title}/><br/>
 
           <button >Submit</button>
           {showsuccess && <div className="success-message">Success! Thank you for registering</div>}
